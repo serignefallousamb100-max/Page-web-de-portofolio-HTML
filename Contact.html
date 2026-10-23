@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>SERIGNE FALLOU SAMB</h1>
+        <nav>
+            <div class="table">
+              <ul>
+                  <li class="menu-acc">
+                      <a href="index.html">Accueil</a>
+                  </li>
+                  <li class="menu-ap">
+                      <a href="A-Propos.html">A-Propos</a>
+                  </li>
+                  <li class="menu-tra">
+                      <a href="Travail.html">Travail</a>
+                  </li>
+                  <li class="menu-cv">
+                      <a href="CV.html">Mon cv</a>
+                  </li>
+                   <li class="menu-con">
+                      <a href="Contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+        </nav>
+       <h1>Formulaire</h1>
+        <form method="post" action="traitement.php">
+        <label for="Prénom">Entrez votre prénom</label>
+        <input type="text" name="Prénom" id="Prénom" autocomplete="on" placeholder="Ex:Fallou" required="required"><br><br>
+
+        <label for="Nom">Entrez votre nom</label>
+        <input type="text" name="Nom" id="Nom" autofocus="autofocus"><br><br>
+
+         <label for="Nom">Email</label>
+        <input type="text" name="Email" id="Email" autofocus="autofocus"><br><br>
+
+          Homme ou Femme ?<br>
+        <label for="Homme">Un Homme</label>
+        <input type="radio" id="Homme" name="Sexe" value="Homme" checked="checked"><br>
+        <label for="Femme">Une Femme</label>
+        <input type="radio" id="Femme" name="Sexe" value="Femme"><br><br>
+
+         Quel(s) sport(s) pratiquez vous ?<br>
+        <label for="natation">Natation</label>
+        <input type="checkbox" id="Natation" name="Sport" value="Natation"><br>
+        <label for="course">Course</label>
+        <input type="checkbox" id="Course" name="Sport" value="Course"><br>
+        <label for="Vélo">Vélo</label>
+        <input type="checkbox" id="Vélo" name="sport" value="Vélo" checked="checked"><br><br>
+
+         <label for="Prez"> Un message pour nous ?</label>
+        <textarea id="Prez" name="Présentation"></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    <footer>
+        <p> SFS-DEV @copyright 2026 </p>
+    </footer>
+    
+</body>
+</html>
