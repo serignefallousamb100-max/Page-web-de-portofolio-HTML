@@ -90,6 +90,7 @@ table{
 #contact{
     background-color:green;
     color: bisque;
+    border: 10px solid ;
 }
 
 a{
@@ -103,16 +104,103 @@ audio{
    padding-left: 500px;
 }
 
+img {
+  transition: transform 1s;
+  border-radius: 10%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 10%;
+  padding-left: 20%;
+  border-bottom-left-radius: 10%;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
 
 
 section{
   padding: 3rem;
   margin: 2rem auto;
-  border: 4px solid #333;
+  border: 4px solid green;
   border-radius: 8px;
   max-width: 800px;
 }
 
+footer{
+    color: green;
+    /* padding: 3rem; */
+    /* margin: 2rem auto; */
+    border: 4px solid green;
+    border-radius: 8px;
+    /* width: 90%; */
+    background-color: bisque;
+}
+
+footer p{
+    font-size: 3.25rem;
+}
+
+
+
+/* Tablettes et petits écrans */
+@media (max-width: 900px) {
+  section {
+    margin: 1.5rem;
+    padding: 2rem;
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+}
+
+/* Téléphones */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem;
+    border-width: 2px;
+  }
+
+  #contact {
+    border-width: 4px;
+  }
+
+  audio {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  footer p {
+    font-size: 1.25rem;
+  }
+}
 /* Pour une portfolio espacé, claire et lisible nous avons fait cela:
 padding: 3rem : Pour espacé l’intérieur nos sections, entre la bordure et le texte.
 margin: 2rem auto : Pour espacé l’extérieur, entre les sections. Le auto centre la section horizontalement.
