@@ -1,38 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – SFS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
     <h1>SERIGNE FALLOU SAMB</h1>
-     <nav>
-            <div class="table">
-              <ul>
-                  <li class="menu-acc">
-                      <a href="index.html">Accueil</a>
-                  </li>
-                  <li class="menu-ap">
-                      <a href="A-Propos.html">A-Propos</a>
-                  </li>
-                  <li class="menu-tra">
-                      <a href="Travail.html">Travail</a>
-                  </li>
-                  <li class="menu-cv">
-                      <a href="CV.html">Mon cv</a>
-                  </li>
-                   <li class="menu-con">
-                      <a href="Contact.html">Contact</a>
-                  </li>
-               </ul>
-            </div>
-        </nav>
-         <footer>
-            Questions sur l'IA la capture se trouve dans le dossier "image" :<br>
-            J'ai modifier les fautes d'orthographe, les espaces, remplacer Accueil par index.html <br>et le texte du dernier lien.
-            Mais j'ai conserver le NAV. 
-           <p> SFS-DEV @copyright 2026 </p>
-         </footer>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#Travail">Travail</a></li>  
+        <li><a href="#cv">Mon CV</a></li>    
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil"><h2>Accueil</h2><p>Bienvenue sur mon portfolio.</p></section>
+    <section id="a-propos"><h2>À propos</h2><p>Je m'appelle SERIGNE FALLOU SAMB, étudiant de Gomycode.</p>
+      <img src="images/WhatsApp Image 2026-10-13 at 19.42.41.jpeg" alt="Ma photo">
+    </section>
+    
+      <section id="Travail"><h2>Travail</h2>
+      <table>
+                <thead>
+                <tr>
+                    <th>Projet</th>
+                    <th>Description</th>
+                    <th>Liens</th>
+                </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <td>Mon école</td>
+                        <td>Ecole de formation WEB</td>
+                        <td><a href="https://monecole.fr/"><img src="images/click_collect.png"  style="height: 50px;"></a></td>
+                    </tr>
+                </thead>
+                <thead>
+                     <tr>
+                        <td>Mon médecin</td>
+                        <td>Dentiste</td>
+                        <td><a href="https://www.emploidakar.com/cabinets-dentaires-dakar/"><img src="images/click_collect.png" style="height: 50px;"></a></td>
+                     </tr>
+                </thead>
+                     <thead>
+                     <tr>
+                        <td>Mon plombier</td>
+                        <td>Plombier PRO</td>
+                        <td><a href="https://www.diallobtp.com/achats-ventes/habitat/plomberie-plombier-a-dakar-senegal"><img src="images/click_collect.png" style="height: 50px;"></a></td>
+                     </tr>
+                 </thead>
+            </table>
+            </section>
+
+
+    <section id="cv">
+      <h2>Mon CV</h2>
+      <a href="CV .pdf" download>Télécharger mon CV (PDF)</a>
+        <audio controls src="Sabhun Tahi.mp3">
+        Ton navigateur ne gère pas la lecture audio.
+        </audio>
+    </section>
+    <section  id="contact">
+      <h2>Contact</h2>
+       <form method="post" action="traitement.php">
+        <label for="Prénom">Entrez votre prénom</label>
+        <input type="text" name="Prénom" id="Prénom" autocomplete="on" placeholder="Ex:Fallou" required="required"><br><br>
+
+        <label for="Nom">Entrez votre nom</label>
+        <input type="text" name="Nom" id="Nom" autofocus="autofocus"><br><br>
+
+         <label for="Nom">Email</label>
+        <input type="text" name="Email" id="Email" autofocus="autofocus" placeholder="ton.email@exemple.com" required="required"><br><br>
+
+          Homme ou Femme ?<br>
+        <label for="Homme">Un Homme</label>
+        <input type="radio" id="Homme" name="Sexe" value="Homme" checked="checked"><br>
+        <label for="Femme">Une Femme</label>
+        <input type="radio" id="Femme" name="Sexe" value="Femme"><br><br>
+
+         Quel(s) sport(s) pratiquez vous ?<br>
+        <label for="natation">Natation</label>
+        <input type="checkbox" id="Natation" name="Sport" value="Natation"><br>
+        <label for="course">Course</label>
+        <input type="checkbox" id="Course" name="Sport" value="Course"><br>
+        <label for="Vélo">Vélo</label>
+        <input type="checkbox" id="Vélo" name="sport" value="Vélo" checked="checked"><br><br>
+
+         <label for="Prez"> Un message pour nous ?</label>
+        <textarea id="Prez" name="Présentation"></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 SFS-DEV</p></footer>
 </body>
 </html>

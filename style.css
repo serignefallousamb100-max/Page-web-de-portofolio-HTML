@@ -1,0 +1,121 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-weight:bolder;
+    color: beige;
+    transition: 1s;
+}
+
+h1:hover{
+    color: green;
+}
+
+
+h2{
+    text-align: center;
+    font-weight:bolder;
+    text-transform:uppercase;
+    color: bisque;
+    background-color: green;
+    transition: 2s;
+}
+
+h2:hover{
+    color: blue;
+}
+
+nav{
+     background-color: green;
+}
+nav li{
+    color: white;
+    background-color: bisque;
+}
+
+nav a{
+    color: green;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content:space-around;
+  font-weight: bold;
+  font-size: large;
+  transition: 2s;
+}
+
+nav a:hover{
+  text-decoration: none;
+  transition: color 0.3s;
+  color: red;
+}
+
+#accueil, #a-propos, #Travail, #cv{
+    background-color: bisque;
+}
+
+/* main{
+    background-color: aqua;
+} */
+
+p{
+    text-align: center;
+    font-weight:bolder; 
+}
+
+th{
+    color: green;
+    background-color: bisque;
+    font-weight: bold;
+}
+
+td{
+    color: bisque;
+    background-color:green;
+}
+
+table{
+    border: 5px solid;
+    background-color:black;
+}
+
+#contact{
+    background-color:green;
+    color: bisque;
+}
+
+a{
+    font-style: italic;
+    font-weight: bolder;
+    color: green;
+    text-align: center;
+    /* padding-left:280px; */
+}
+audio{
+   padding-left: 500px;
+}
+
+
+
+section{
+  padding: 3rem;
+  margin: 2rem auto;
+  border: 4px solid #333;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Pour une portfolio espacé, claire et lisible nous avons fait cela:
+padding: 3rem : Pour espacé l’intérieur nos sections, entre la bordure et le texte.
+margin: 2rem auto : Pour espacé l’extérieur, entre les sections. Le auto centre la section horizontalement.
+border: 4px solid #333 : la bordure, avec son épaisseur, son style (solid, dashed, dotted) et sa couleur.
+border-radius: 8px : des coins arrondis.
+max-width: 800px : limite la largeur pour garder une mise en page lisible (facultatif). */
